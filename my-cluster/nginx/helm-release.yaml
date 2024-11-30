@@ -19,9 +19,10 @@ spec:
     service:
       type: ClusterIP
       port: 80
-    autoscaling:
-      enabled: true
-      minReplicas: 2
-      maxReplicas: 10
-      targetCPUUtilizationPercentage: 60
-      targetMemoryUtilizationPercentage: 60
+    nginx:
+      autoscaling:
+        enabled: true
+        minReplicas: 2
+        maxReplicas: 10
+        targetCPUUtilizationPercentage: 60
+        targetMemoryUtilizationPercentage: 60
